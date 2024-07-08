@@ -1,0 +1,55 @@
+.select2-container .select2-selection {
+	text-align: left;
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+.select2-container .select2-selection .select2-selection__arrow {
+	height: 95%;
+}
+.box-search {
+	display: flex;
+	border: 1px solid #dedede;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 5px;
+}
+.box-result {
+	border: 1px solid #dedede;
+	border-radius: 5px;
+}
+.box-result .route:first-of-type{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dedede;
+}
+.box-result .route .hours-container{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.box-result .route .hours-container .hour-item{
+	background: #0fa536;
+    padding: 5px 15px;
+    border-radius: 3px;
+    color: #fff;
+	margin: 0 5px 5px 0;
+	/* cursor: pointer; */
+}
+.box-result .route .hours-container .hour-item.disabled{
+	opacity: 0.7;
+}
+.loading {
+	position: fixed;
+	background: rgb(255 255 255 / 50%);
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+}
+.loading.show {
+	display: flex;
+}
